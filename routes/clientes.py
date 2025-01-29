@@ -26,9 +26,15 @@ def inserir_cliente():
 
 #puxando o formulario para cadastrar cliente
 @cliente_route.route('/new')
-def inserir_cliente():
+def new_cliente():
   pass
 
+#puxando o formulario para detalhar o cliente
 @cliente_route.route('/<int: cliente_id>')
-def obter_cliente(cliente_id):
+def detalhe_cliente(cliente_id):
+  pass
+
+#formulario para editar um cliente
+@cliente_route.route('/<int: cliente_id>/edit')
+def detalhe_cliente(cliente_id):
   pass
